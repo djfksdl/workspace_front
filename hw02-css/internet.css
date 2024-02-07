@@ -1,0 +1,111 @@
+body{
+    font-family: '맑은고딕';
+    font-size: 17px;
+}
+h1{
+    font-family: 궁서체;
+    font-size: 30px;
+    letter-spacing: 15px;
+}
+h2{
+    font-size: 25px;
+}
+h3{
+    font-size: 20px;
+}
+
+/* 1번 */
+.aLink:link{
+    text-decoration: underline;
+}
+.itelicBold{
+    font-style: italic;
+    font-weight: bold;
+    color: #0000ff;
+}
+.itelicBold:last-child{
+    color: #ff0000;
+}
+
+/* 2번 */
+.wrapBox{
+    background-color: #d9d9d9;
+}
+.btmLine{
+    color: #00ff00;
+    text-decoration: underline;
+}
+.btmLine2{
+    text-decoration: underline;
+}
+.boldRed{
+    font-weight: bold;
+    color: #ff0000;
+}
+.wrapBox .btmLine2+p{
+    text-indent: 30px;
+}
+
+/* 3번 */
+.bColor1{
+    font-weight: bold;
+    color: #00ff00;
+}
+.bColor2{
+    font-style: italic;
+    color: #0000ff;
+}
+.bColor3{
+    font-weight: bold;
+    color: #ff0000;
+}
+ul li{
+    list-style: square;
+}
+
+/* 4번 */
+ol >li{
+    list-style: none;
+}
+ol>li:first-child:before{
+    content: '1.';
+}
+ol>li:nth-child(2):before{
+    content: '2.';
+}
+ol>li:nth-child(3):before{
+    content: '3.';
+}
+ol>li:nth-child(4):before{
+    content: '4.';
+}
+
+/* 5번 */
+thead{
+    background-color: #c8ebfa;
+}
+tbody tr:hover{
+    background-color: #edd3ed;
+}
+tbody td:first-child a{
+    color: #000000;
+    text-decoration: none;
+}
+tbody td:first-child a:hover{
+    color: #0000ff;
+    text-decoration: underline;
+}
+tbody td:first-child a:active{
+    color: #0000ff;
+    text-decoration: underline;
+}
+
+tbody td:nth-child(2){
+    text-align: right;
+}
+tbody td:nth-child(2)::before{
+    content: '약';
+}
+tbody td:nth-child(2)::after{
+    content: '(MB/초)';
+}
