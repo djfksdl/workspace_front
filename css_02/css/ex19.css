@@ -1,0 +1,28 @@
+body{
+    background-color: #808080;
+    font-family: "맑은고딕";
+    font-size: 12px;
+}
+.content{
+    width: 600px;
+    background-color: #fff;
+}
+h3{
+    font-size: 18px;
+    font-weight: bold;
+}
+.form-wrap{
+    border-bottom: 1px solid #000;
+    padding: 10px 0;
+}
+label{
+    background-color: pink;
+}
+/* 버튼 */
+.btn-wrap{
+    text-align: center;
+}
+.btn-wrap button{
+    width: 120px;
+    padding: 10px 0;
+}

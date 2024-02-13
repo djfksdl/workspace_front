@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+        <link rel="stylesheet" href="./css/ex19.css">
+    </head>
+
+    <body>
+        <div class="content">
+            <h3>회원가입</h3>
+            <!-- 목록 -->
+            <!-- 아이디 -->
+            <div class="form-wrap">
+                <label for="form-id">아이디</label>
+                <input id="form-id" type="text" placeholder="아이디를 입력하세요">
+            </div>
+            <!-- 패스워드 -->
+            <div class="form-wrap">
+                <label for="form-pw">패스워드</label>
+                <input id="form-pw" type="password" placeholder="패스워드를 입력하세요">
+            </div>
+            <!-- 이름 -->
+            <div class="form-wrap">
+                <label for="form-name">이름</label>
+                <input id="form-name" type="text" placeholder="이름을 입력하세요">
+            </div>
+            <!-- 프로필사진 -->
+            <div class="form-wrap">
+                <label>프로필사진</label>
+                <input type="file">
+            </div>
+            <!-- 주소 -->
+            <div class="form-wrap">
+                <label for="form-address">주소</label>
+                <input id="form-address" type="text" placeholder="주소벨류">
+                <button type="submit">우편번호 찾기</button>
+                <br>
+                <input type="text">
+            </div>
+            <!-- 이동통신사 -->
+            <div class="form-wrap">
+                <label for="form-tel">이동통신사</label>
+                <select>
+                    <option>선택해주세요</option>
+                    <option>LGU+</option>
+                    <option>SKT</option>
+                    <option>KT</option>
+                </select>
+            </div>
+            <!-- 나이 -->
+            <div class="form-wrap">
+                <span>나이</span>
+                <label for="form-rdo-age1">10대</label>
+                <input id="form-rdo-age1" type="radio" name="age">
+                <label for="form-rdo-age2">20대</label>
+                <input id="form-rdo-age2" type="radio" name="age">
+                <label for="form-rdo-age3">30대</label>
+                <input id="form-rdo-age3" type="radio" name="age">
+                <label for="form-rdo-age4">40대</label>
+                <input id="form-rdo-age4" type="radio" name="age">
+                <label for="form-rdo-age5">기타</label>
+                <input id="form-rdo-age5" type="radio" name="age">
+            </div>
+            <!-- 혈액형 -->
+            <div class="form-wrap">
+                <span>혈액형</span>
+                <label for="form-rdo-b-type1">A형</label>
+                <input id="form-rdo-b-type1" type="radio" name="b-type">
+                <label for="form-rdo-b-type2">B형</label>
+                <input id="form-rdo-b-type2" type="radio" name="b-type">
+                <label for="form-rdo-b-type3">O형</label>
+                <input id="form-rdo-b-type3" type="radio" name="b-type">
+                <label for="form-rdo-b-type4">AB형</label>
+                <input id="form-rdo-b-type4" type="radio" name="b-type">
+            </div>
+            <!-- 취미 -->
+            <div class="form-wrap">
+                <span>취미</span>
+                <label for="chk-book">독서</label>
+                <input id="chk-book" type="checkbox">
+                <label for="chk-music">음악</label>
+                <input id="chk-music" type="checkbox">
+                <label for="chk-trip">여행</label>
+                <input id="chk-trip" type="checkbox">
+                <label for="chk-movie">영화</label>
+                <input id="chk-movie" type="checkbox">
+                <label for="chk-coding">코딩</label>
+                <input id="chk-coding" type="checkbox">
+                <label for="chk-other">기타</label>
+                <input id="chk-other" type="checkbox">
+            </div>
+            <!-- 자기소개 -->
+            <div class="form-wrap">
+                <span>자기소개</span>
+                <textarea></textarea>
+            </div>
+            <!-- 버튼 -->
+            <div class="form-wrap btn-wrap" >
+                <button>등록</button>
+                <button>초기화</button>
+            </div>
+        </div>
+    </body>
+
+</html>
