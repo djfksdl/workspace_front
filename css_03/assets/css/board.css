@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/******** 공통 *******/
+/* 여백초기화 */
+body , div, dl, dt, ol,ul,li, 
+h1,h2,h3,h4,h5,h6,input,
+fieldset, legend, p ,select,
+table, th,td,tr,textarea ,
+button, form{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+body{
+    font-family: "맑은 고딕";
+    font-size: 12px;
+}
+a, a:link ,a:visited a:active ,a:hover{
+    text-decoration: none;
+    color: #000;
+}
+.clearfix::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+ul,li{
+    list-style: none;
+}
+
+
+#subMenu{
+    float: left;
+
+}
+#main{
+    float: left;
+}

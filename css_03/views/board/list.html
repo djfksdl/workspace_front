@@ -3,35 +3,139 @@
 <html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
     <head>
         <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
-        <title>스타일시트</title>
+        <title>mysite</title>
         <!-- 스타일시트자리 -->
-        <style>
-            div{
-                border: 1px solid #000;
-            }
-            #subMenu{
-                float: left;
-
-            }
-            #main{
-                float: left;
-            }
-            .clearfix::after{
-                display: block;
-                content: '';
-                clear: both;
-            }
-        </style>
+        <link href="../../assets/css/mysite.css" rel="stylesheet">
     </head>
 
     <body>
-        <div>header</div>
-        <div>nav-gnb</div>
-        <div class="clearfix">
-            <div id="subMenu">서브메뉴</div>
-            <div id="main">게시판 리스트</div>
+        <div id="wrap">
+            <div id="header" class="clearfix">
+                <h1>MySite</h1>
+                <ul class="clearfix">
+                    <li><a href="">로그인</a></li>
+                    <li><a href="">회원가입</a></li>
+                </ul>
+            </div>
+            <div id="nav">
+                <ul class="clearfix">
+                    <li><a href="">입사지원서</a></li>
+                    <li><a href="">게시판</a></li>
+                    <li><a href="">갤러리</a></li>
+                    <li><a href="">방명록</a></li>
+                </ul>
+            </div>
+            <!-- list내용 -->
+            <div id="contents2" class="clearfix">
+                <!-- 왼쪽 메뉴 -->
+                <div id="aside">
+                    <h2>게시판</h2>
+                    <ul>
+                        <li><a href="">일반게시판</a></li>
+                        <li><a href="">댓글게시판</a></li>
+                    </ul>
+                </div>
+                <!-- 오른쪽 메뉴 -->
+                <div id="main">
+                    <!-- 위쪽 박스 -->
+                    <div class="clearfix top-box" >
+                        <h3>일반게시판</h3>
+                        <!-- 현재위치 -->
+                        <ul class="clearfix">
+                            <li>홈</li>
+                            <li>게시판</li>
+                            <li>일반게시판</li>
+                        </ul>
+                    </div>
+                    <!-- 중간박스 -->
+                    <div class="mid-box clearfix">
+                        <!-- 검색 -->
+                            <div class="search">
+                                <input type="text">
+                                <button>검색</button>
+                            </div>
+                    </div>
+                    <!-- 게시판 -->
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>번호</th>
+                                <th>제목</th>
+                                <th>글쓴이</th>
+                                <th>조회수</th>
+                                <th>작성일</th>
+                                <th>관리</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>123</td>
+                                <td>게시판 게시글입니다.</td>
+                                <td>정우성</td>
+                                <td>1232</td>
+                                <td>2020-12-23</td>
+                                <td>[삭제]</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>게시판 게시글입니다.</td>
+                                <td>정우성</td>
+                                <td>1232</td>
+                                <td>2020-12-23</td>
+                                <td>[삭제]</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>게시판 게시글입니다.</td>
+                                <td>정우성</td>
+                                <td>1232</td>
+                                <td>2020-12-23</td>
+                                <td>[삭제]</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>게시판 게시글입니다.</td>
+                                <td>정우성</td>
+                                <td>1232</td>
+                                <td>2020-12-23</td>
+                                <td>[삭제]</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>게시판 게시글입니다.</td>
+                                <td>정우성</td>
+                                <td>1232</td>
+                                <td>2020-12-23</td>
+                                <td>[삭제]</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- 아래쪽 박스 -->
+                    <div class="botm-box clearfix">
+                        <!-- 숫자 -->
+                        <ul class="clearfix">
+                            <li>&lt;</li>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li><strong>5</strong></li>
+                            <li>6</li>
+                            <li>7</li>
+                            <li>8</li>
+                            <li>9</li>
+                            <li>10</li>
+                            <li>&gt;</li>
+                        </ul>
+                        <!-- 버튼 -->
+                        <button>글쓰기</button>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <p>Copyright &copy; 2024 dldustn All right reserved</p>
+            </div>
         </div>
-        <div>footer</div>
     </body>
 
 </html>

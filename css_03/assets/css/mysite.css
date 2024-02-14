@@ -20,11 +20,13 @@ body{
     font-family: "맑은 고딕";
     font-size: 12px;
 }
-a:link ,a:visited a:active ,a:hover{
+a, a:link ,a:visited a:active ,a:hover{
     text-decoration: none;
     color: #000;
 }
-
+li{
+    list-style: none;
+}
 
 #wrap{
     width: 1000px;
@@ -33,6 +35,7 @@ a:link ,a:visited a:active ,a:hover{
 #header{
     border-bottom: 1px solid #ccc;
     padding: 10px 0;
+    /* background-color: slateblue; */
 }
 
 /* header */
@@ -54,11 +57,18 @@ h1{
     border-radius: 3px;
     font-size: 10px;
 }
+#header ul >li a{
+    
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    padding: 3px;
+}
 
 
 /* nav */
 #nav{
     border-bottom: 1px solid #ccc;
+    /* background-color: seagreen; */
 }
 #nav > ul{
     list-style: none;
@@ -77,13 +87,160 @@ h1{
 }
 
 
+
 /* content */
 #contents{
-    border: 1px solid #000000;
+    /* border: 1px solid #000000; */
+    /* background-color: sandybrown; */
+    padding: 20px ;
+
+}
+#contents #profile{
+    width: 300px;
+    float: left;
+    margin-right: 30px;
+}
+#contents #greeting-box{
+    float: left;
+    font-size: 18px;
+}
+#contents #greeting-box p:first-child{
+    font-weight: bold;
 }
 
 /* footer */
 #footer{
-    border: 1px solid #000000;
+    /* border: 1px solid #000000; */
+    background-color: #e7eaed;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 15px;
+}
 
+/* list.html */
+
+#contents2{
+    padding: 20px 0
+}
+/* 왼쪽메뉴 */
+#contents2 #aside{
+    /* background-color: pink; */
+    float: left;
+    width: 180px;
+}
+#contents2 #aside h2{
+    width: 160px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #ddd;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+#contents2 #aside ul{
+    width: 160px;
+}
+#contents2 #aside ul li{
+    border: 1px solid #a6a6a6;
+    padding: 8px 0 8px 10px;
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+/* 오른쪽 메뉴 */
+#contents2 #main{
+    /* background-color: skyblue; */
+    float: left;
+    width: 820px;
+}
+#contents2 #main .top-box{
+    border-bottom: 1px solid #aaa;
+}
+
+/* 오른쪽메뉴- top */
+#contents2 #main h3{
+    float: left;
+}
+
+#contents2 #main .top-box>ul{
+    /* display: flex;
+    justify-content: end; */
+    float: right;
+
+}
+#contents2 #main .top-box >ul >li{
+    float: left;
+}
+#contents2 #main .top-box >ul >li::after{
+    content: '>';
+}
+#contents2 #main .top-box >ul >li:last-child:after{
+    content: '';
+}
+
+/* 오른쪽메뉴 - mid */
+#contents2 #main .mid-box{
+    padding-top: 5px ;
+}
+#contents2 #main .mid-box .search{
+    float: right;
+}
+#contents2 #main .mid-box .search input{
+    height: 21px;
+    width: 120px;
+}
+#contents2 #main .mid-box .search button{
+    padding: 2px;
+}
+
+/* 오른쪽메뉴 - table */
+#contents2 #main table{
+    border-collapse: collapse;
+    border: 1px solid #000;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+}
+#contents2 #main table thead{
+    border-bottom: 1px solid #000;
+    background-color: #ccc;
+}
+#contents2 #main table thead tr{}
+#contents2 #main table thead tr th{
+    padding: 8px 0;
+}
+#contents2 #main table tbody{
+   
+}
+#contents2 #main table tbody tr{
+    border-bottom: 1px solid #000;
+}
+#contents2 #main table tbody tr td{
+    padding: 8px 0;
+}
+
+/* 오른쪽메뉴 - bottom */
+#contents2 #main .botm-box{
+}
+#contents2 #main .botm-box >ul{
+    width: 24.4%;
+    /* background-color: pink; */
+    margin: 0 auto;
+}
+#contents2 #main .botm-box >ul >li{
+    float: left;
+    /* background-color: skyblue; */
+    margin: 0 5px;
+}
+#contents2 #main .botm-box >ul >li:first-child{
+    margin-left: 0;
+}
+#contents2 #main .botm-box >ul >li:last-child{
+    margin-right: 0;
+}
+#contents2 #main .botm-box button{
+    float: right;
+    padding: 2px;
 }
