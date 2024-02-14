@@ -160,12 +160,14 @@ h1{
 /* 오른쪽메뉴- top */
 #contents2 #main h3{
     float: left;
+    font-size: 22px;
 }
 
 #contents2 #main .top-box>ul{
     /* display: flex;
     justify-content: end; */
     float: right;
+    padding-top: 10px;
 
 }
 #contents2 #main .top-box >ul >li{
@@ -225,7 +227,7 @@ h1{
 #contents2 #main .botm-box{
 }
 #contents2 #main .botm-box >ul{
-    width: 24.4%;
+    width: 26%;
     /* background-color: pink; */
     margin: 0 auto;
 }
