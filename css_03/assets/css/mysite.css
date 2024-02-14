@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/******** 공통 *******/
+/* 여백초기화 */
+body , div, dl, dt, ol,ul,li, 
+h1,h2,h3,h4,h5,h6,input,
+fieldset, legend, p ,select,
+table, th,td,tr,textarea ,
+button, form{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+.clearfix::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+
+body{
+    font-family: "맑은 고딕";
+    font-size: 12px;
+}
+a:link ,a:visited a:active ,a:hover{
+    text-decoration: none;
+    color: #000;
+}
+
+
+#wrap{
+    width: 1000px;
+    margin: 0 auto;
+}
+#header{
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+/* header */
+h1{
+    color: #79b30b;
+    font-size: 35px;
+    float: left;
+}
+#header ul{
+    list-style: none;
+    float: right;
+    margin-top: 14px;
+}
+#header ul >li{
+    float: left;
+    margin: 0 0 0 10px;
+    padding: 3px 5px;
+    /* border: 1px solid #7e7e7e; */
+    border-radius: 3px;
+    font-size: 10px;
+}
+
+
+/* nav */
+#nav{
+    border-bottom: 1px solid #ccc;
+}
+#nav > ul{
+    list-style: none;
+    /* display: flex;
+    justify-content: space-between; */
+    padding: 10px 0;
+    /* border: 1px solid #000; */
+}
+#nav > ul > li{
+    font-size: 20px;
+    font-weight: bold;
+    /* border: 1px solid #000; */
+    width: 250px;
+    text-align: center;
+    float: left;
+}
+
+
+/* content */
+#contents{
+    border: 1px solid #000000;
+}
+
+/* footer */
+#footer{
+    border: 1px solid #000000;
+
+}
