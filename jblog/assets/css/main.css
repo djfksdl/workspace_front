@@ -1,0 +1,115 @@
+@charset "UTF-8";
+/******** 공통 *******/
+/* 여백초기화 */
+body , div, dl, dt, ol,ul,li, 
+h1,h2,h3,h4,h5,h6,input,
+fieldset, legend, p ,select,
+table, th,td,tr,textarea ,
+button, form{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+body{
+    font-family: "맑은 고딕";
+    font-size: 16px;
+}
+button{
+    font-size: 15px;
+}
+a, a:link ,a:visited a:active ,a:hover{
+    text-decoration: none;
+    color: #000;
+}
+.clearfix::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+ul,li{
+    list-style: none;
+}
+
+#wrap{
+    width: 1000px;
+    margin: 0 auto;
+    /* background-color: orange; */
+}
+/* ----------header------------ */
+header{
+    /* background-color: pink; */
+    padding-bottom: 38px;
+}
+/* 로고 */
+header h1 img{
+    display: block;
+    margin: 0 auto;
+}
+/* 버튼 */
+header .btn-box1{
+    /* background-color: palegreen; */
+    width: 170px;
+    margin: 0 auto;
+}
+header .btn-box1 button{
+    float: left;
+    width: 80px;
+    height: 30px;
+    margin-right: 10px;
+}
+header .btn-box1 button:last-child{
+    margin-right: 0;
+}
+
+/* ----------contents------------ */
+.contents{
+    /* background-color: paleturquoise; */
+    padding-bottom: 500px;
+}
+/* 검색창 */
+.contents .search-box{
+    /* padding-top: 38px; */
+    width: 481px;
+    margin: 0 auto;
+    /* background-color: palevioletred; */
+}
+.contents .search-box input{
+    width: 425px;
+    height: 45px;
+    float: left;
+    border-color: #254EDB;
+    border-style: solid;
+}
+.contents .search-box button{
+    width: 56px;
+    height: 45px;
+    float: left;
+    background-color: #254EDB;
+    border-color: #254EDB;
+    color: #fff;
+    border-style: solid;
+}
+/* 라디오 체크 */
+.contents .radio-box{
+    /* background-color: papayawhip; */
+    width: 240px;
+    margin: 0 auto;
+    padding-top: 8px;
+}
+.contents .radio-box input{
+    margin-right: 25px;
+}
+.contents .radio-box input:last-child{
+    margin-right: 0;
+}
+/* ----------footer------------ */
+footer{
+    background-color: #F0F0F0;
+}
+footer ul{}
+footer ul li{
+    float: left;
+    padding: 23px 0;
+    margin: 0 20px;
+}
+footer ul li a{}

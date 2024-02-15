@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>main - signIn</title>
+        <!-- 스타일시트자리 -->
+        <link href="../../assets/css/main.css" rel="stylesheet">
+        <link href="../../assets/css/signIn.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="wrap">
+            <!-- 헤더 -->
+            <header>
+                <!-- 로고 -->
+                <h1><img src="../../assets/images/logo.jpg"></h1>
+                <!-- 버튼 -->
+                <div class="btn-box1 clearfix">
+                    <button>로그인</button>
+                    <button>회원가입</button>
+                </div>
+            </header>
+            <!-- 컨텐츠- 회원가입 -->
+            <div class="contents3">
+                <!-- 회원가입 박스 -->
+                <div class="sign-box">
+                    <div class="sign-top">
+                        <div class="sign-id">
+                            <div> <!-- 버튼 맞추기 하고싶으면 float:left하기-->
+                                <span>아이디</span>
+                                <input type="text">
+                                <button>아이디체크</button>
+                            </div>
+                            <p>사용할 수 있는 아이디 입니다.</p>
+                        </div>
+                        <div class="sign-pw">
+                            <span>패스워드</span>
+                            <input type="password">
+                        </div>
+                        <div class="sign-name">
+                            <span>이름</span>
+                            <input type="text">
+                        </div>
+                        <div class="sign-agree">
+                            <span>약관동의</span>
+                            <input id="signAgree" type="checkbox">
+                            <label for="signAgree">서비스 약관에 동의합니다.</label>
+                        </div>
+                    </div>
+                    <div class="sign-bottom">
+                        <button>회원가입</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 푸터 -->
+            <footer>
+                <ul class="clearfix">
+                    <li><a>회사소개</a></li>
+                    <li><a>서비스소개</a></li>
+                    <li><a>이용약관</a></li>
+                    <li><a>개인정보처리방침</a></li>
+                    <li><a>제휴</a></li>
+                    <li><a>체용</a></li>
+                    <li><a>고객센터</a></li>
+                    <li><a>&copy;방구석 internet</a></li>
+                </ul>
+            </footer>
+        </div>
+    </body>
+</html>

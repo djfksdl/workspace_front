@@ -1,0 +1,61 @@
+/* ----------contents2------------ */
+/* 관리자페이지-wirte */
+
+/* 카테고리 */
+.contents2 .category-btn-box .ctg-btn:nth-child(3){
+    background-color: #DDD;
+}
+
+/* write-box */
+.write-box{
+    border: 1px solid #808080;
+    padding: 30px 20px;
+}
+
+/* 내용-top */
+.write-box .wb-top{
+    /* background-color: yellowgreen; */
+    padding-bottom: 36px;
+    border-bottom: 1px solid #767676;
+}
+/* wb-title */
+.write-box .wb-top span{
+    width: 100px;
+    display: inline-block;
+    /* background-color: darkorange; */
+}
+.write-box .wb-top .wb-title{
+    margin-bottom: 22px;
+}
+.write-box .wb-top .wb-title span{}
+.write-box .wb-top .wb-title input{
+    width: 452px;
+    height: 32px;
+}
+.write-box .wb-top .wb-title select{
+    width: 149px;
+    height: 33px;
+}
+.write-box .wb-top .wb-title select option{}
+/* wb-content */
+.write-box .wb-top .wb-content{}
+.write-box .wb-top .wb-content span{
+    float: left;
+    margin: 115px 6px 0 0;
+}
+.write-box .wb-top .wb-content textarea{
+    width: 600px;
+    height: 300px;
+    float: left;
+}
+/* 내용-bottom */
+.write-box .wb-bottom{
+    /* background-color: tomato; */
+    padding-top: 10px;
+}
+.write-box .wb-bottom button{
+    width: 95px;
+    height: 41px;
+    display: block;
+    margin: 0 auto;
+}

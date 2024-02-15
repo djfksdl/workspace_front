@@ -1,0 +1,63 @@
+/* ----------contents2------------ */
+/* 관리자페이지-basic */
+
+.contents2 .category-btn-box .ctg-btn:first-child{
+    background-color: #DDD;
+}
+
+/* 내용 */
+.contents2 .basic-box{
+    border: 1px solid #808080;
+    padding: 42px 20px 30px 20px;
+    /* background-color: thistle; */
+}
+.contents2 .basic-box span{
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 12px;
+    /* background-color: mediumturquoise; */
+}
+.contents2 .basic-box .bb-title{
+    /* background-color: khaki; */
+    margin-bottom: 22px;
+}
+.contents2 .basic-box .bb-title input{
+    width: 602px;
+    height: 32px;
+}
+
+/* 내용-bb-top */
+.contents2 .basic-box .bb-top{
+    /* background-color: aquamarine; */
+    border-bottom: 1px solid #808080;
+    padding-bottom: 32px;
+    margin-bottom: 10px;
+}
+/* bb-top -bb-file */
+.contents2 .basic-box .bb-file{
+    /* background-color: tomato; */
+
+}
+.contents2 .basic-box .bb-file span{
+    float: left;
+    margin: 42px 15px 0 0;
+}
+.contents2 .basic-box .bb-file .bbf-img{
+    float: left;
+}
+.contents2 .basic-box .bb-file .bbf-img img{
+    width: 178px;
+    display: block;
+    margin-bottom: 25px;
+}
+.contents2 .basic-box .bb-file .bbf-img input{}
+
+/* 내용-bb-bottom */
+.contents2 .basic-box .bb-bottom{}
+.contents2 .basic-box .bb-bottom button{
+    width: 108px;
+    height: 41px;
+    margin: 0 auto;
+    display: block;
+}
