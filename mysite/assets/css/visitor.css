@@ -12,14 +12,14 @@
 .contents4 .sign-up-box .sub-top span{
     width: 70px;
     height: 40px;
-    /* background-color: orangered; */
     display: inline-block;
     line-height: 40px;
     border-right: 1px solid #A6A6A6;
-    border-left: 1px solid #A6A6A6;
+    margin: 0  5px;
+    padding-left:2px;
 }
 .contents4 .sign-up-box .sub-top input{
-    width: 324px;
+    width: 314px;
     height: 27px;
 }
 .contents4 .sign-up-box .sub-top .sub-name{
@@ -27,6 +27,9 @@
 }
 .contents4 .sign-up-box .sub-top .sub-pw{
     float: left;
+}
+.contents4 .sign-up-box .sub-top .sub-pw span{
+    border-left: 1px solid #A6A6A6;
 }
 
 /* 위쪽박스 -sub-mid */
@@ -68,12 +71,15 @@
 }
 .contents4 .visitor-text-box .visitor-firstInfo> div:nth-child(1){
     width: 70px;
+    border-right: none;
 }
 .contents4 .visitor-text-box .visitor-firstInfo> div:nth-child(2){
-    width: 316px;
+    width: 318px;
+    border-right: none;
 }
 .contents4 .visitor-text-box .visitor-firstInfo> div:nth-child(3){
-    width: 316px;
+    width: 317px;
+    border-right: none;
 }
 .contents4 .visitor-text-box .visitor-firstInfo> div:nth-child(4){
     width: 70px;
@@ -81,6 +87,7 @@
 /* 둘째줄 */
 .contents4 .visitor-text-box .visitor-wirte{
     border: 1px solid #A6A6A6;
+    border-top: none;
     height: 30px;
     line-height: 30px;
     padding-left:5px ;
