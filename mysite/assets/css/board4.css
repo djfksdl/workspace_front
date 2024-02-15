@@ -1,0 +1,32 @@
+/* 일반게시판4 */
+/* 중간박스 */
+.mid-box2{
+    padding: 15px 0;
+}
+.mid-box2  span{
+    font-weight: normal;
+    width: 100px;
+    display: inline-block;
+}
+.mid-box2 .mid-box2-title{
+    margin-bottom: 10px;
+}
+.mid-box2 .mid-box2-title input{
+    width: 709px;
+    height: 27px;
+}
+.mid-box2 .board4-textarea{
+    width: 816px;
+    height: 400px;
+}
+
+/* 아래쪽박스 */
+.botm-box2{
+}
+.botm-box2 .botm-box2-btns{
+    float: right;
+}
+.botm-box2 .botm-box2-btns button{
+    width: 69px;
+    height: 28px;
+}

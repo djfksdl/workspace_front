@@ -1,0 +1,21 @@
+.mid-box .upload {
+    float: right;
+    padding: 5px;
+    margin: 5px 0;
+}
+.img-box{
+    border: 1px solid black;
+    width: 193px;
+    float: left;
+    margin: 5px;
+}
+
+.img-box img{
+    width: 95%;
+    margin: 0 auto;
+    display: block;
+}
+.img-box p{
+    width: 95%;
+    margin: 0 auto;
+}

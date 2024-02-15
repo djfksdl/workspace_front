@@ -1,0 +1,90 @@
+.contents4{
+    padding-top: 40px;
+}
+/* 위쪽박스 */
+.contents4 .sign-up-box{
+    margin-bottom: 30px;
+}
+/* 위쪽박스 -sub-top */
+.contents4 .sign-up-box .sub-top{
+    border: 1px solid #A6A6A6;
+}
+.contents4 .sign-up-box .sub-top span{
+    width: 70px;
+    height: 40px;
+    /* background-color: orangered; */
+    display: inline-block;
+    line-height: 40px;
+    border-right: 1px solid #A6A6A6;
+    border-left: 1px solid #A6A6A6;
+}
+.contents4 .sign-up-box .sub-top input{
+    width: 324px;
+    height: 27px;
+}
+.contents4 .sign-up-box .sub-top .sub-name{
+    float: left;
+}
+.contents4 .sign-up-box .sub-top .sub-pw{
+    float: left;
+}
+
+/* 위쪽박스 -sub-mid */
+.contents4 .sign-up-box .sub-mid{
+    border-right: 1px solid #A6A6A6;
+    border-left: 1px solid #A6A6A6;
+    padding: 5px 0;
+}
+.contents4 .sign-up-box .sub-mid textarea{
+    width: 804px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+}
+/* 위쪽박스 -sub-bottom */
+.contents4 .sign-up-box .sub-bottom{
+    border: 1px solid #A6A6A6;
+    padding: 5px 0;
+}
+.contents4 .sign-up-box button{
+    width: 98px;
+    height: 30px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* 아래박스 */
+.contents4 .visitor-text-box{
+    margin-bottom: 10px;
+}
+/* 첫째줄 */
+.contents4 .visitor-text-box .visitor-firstInfo{}
+.contents4 .visitor-text-box .visitor-firstInfo> div{
+    float: left;
+    border: 1px solid #A6A6A6;
+    height: 30px;
+    line-height: 30px;
+    padding-left:10px;
+}
+.contents4 .visitor-text-box .visitor-firstInfo> div:nth-child(1){
+    width: 70px;
+}
+.contents4 .visitor-text-box .visitor-firstInfo> div:nth-child(2){
+    width: 316px;
+}
+.contents4 .visitor-text-box .visitor-firstInfo> div:nth-child(3){
+    width: 316px;
+}
+.contents4 .visitor-text-box .visitor-firstInfo> div:nth-child(4){
+    width: 70px;
+}
+/* 둘째줄 */
+.contents4 .visitor-text-box .visitor-wirte{
+    border: 1px solid #A6A6A6;
+    height: 30px;
+    line-height: 30px;
+    padding-left:5px ;
+}
+.contents4 .visitor-text-box .visitor-write p{
+    
+}

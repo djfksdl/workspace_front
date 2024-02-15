@@ -1,0 +1,249 @@
+@charset "UTF-8";
+/******** 공통 *******/
+/* 여백초기화 */
+body , div, dl, dt, ol,ul,li, 
+h1,h2,h3,h4,h5,h6,input,
+fieldset, legend, p ,select,
+table, th,td,tr,textarea ,
+button, form{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+.clearfix::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+
+body{
+    font-family: "맑은 고딕";
+    font-size: 12px;
+}
+a, a:link ,a:visited a:active ,a:hover{
+    text-decoration: none;
+    color: #000;
+}
+li{
+    list-style: none;
+}
+
+#wrap{
+    width: 1000px;
+    margin: 0 auto;
+}
+/* ----------header------------ */
+header{
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    /* background-color: slateblue; */
+}
+/* 로고 */
+h1{
+    color: #79b30b;
+    font-size: 35px;
+    float: left;
+}
+/* 버튼 */
+header ul{
+    list-style: none;
+    float: right;
+    margin-top: 14px;
+}
+header ul >li{
+    float: left;
+    margin: 0 0 0 5px;
+    padding: 3px 5px;
+    border-radius: 3px;
+    font-size: 10px;
+}
+header ul >li a{
+    
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+
+/* ----------nav------------ */
+nav{
+    border-bottom: 1px solid #ccc;
+    /* background-color: seagreen; */
+}
+nav > ul{
+    list-style: none;
+    /* display: flex;
+    justify-content: space-between; */
+    padding: 10px 0;
+}
+nav > ul > li{
+    font-size: 20px;
+    font-weight: bold;
+    width: 250px;
+    text-align: center;
+    float: left;
+}
+
+
+/* ----------contents------------ */
+#contents{
+    /* background-color: sandybrown; */
+    padding: 20px ;
+
+}
+#contents #profile{
+    width: 300px;
+    float: left;
+    margin-right: 30px;
+}
+#contents #greeting-box{
+    float: left;
+    font-size: 18px;
+}
+#contents #greeting-box p:first-child , #contents #greeting-box p:nth-child(2){
+    font-weight: bold;
+}
+
+/* ----------footer------------ */
+footer{
+    background-color: #DDD;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+/* list.html */
+
+#contents2{
+    padding: 20px 0
+}
+/* 왼쪽메뉴 */
+#contents2 #aside{
+    /* background-color: pink; */
+    float: left;
+    width: 180px;
+}
+#contents2 #aside h2{
+    width: 160px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #ddd;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+#contents2 #aside ul{
+    width: 160px;
+}
+#contents2 #aside ul li{
+    border: 1px solid #a6a6a6;
+    padding: 8px 0 8px 10px;
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+/* 오른쪽 메뉴 */
+#contents2 #main{
+    /* background-color: skyblue; */
+    float: left;
+    width: 820px;
+}
+#contents2 #main .top-box{
+    border-bottom: 1px solid #aaa;
+}
+
+/* 오른쪽메뉴- top */
+#contents2 #main h3{
+    float: left;
+    font-size: 22px;
+}
+
+#contents2 #main .top-box>ul{
+    /* display: flex;
+    justify-content: end; */
+    float: right;
+    padding-top: 10px;
+
+}
+#contents2 #main .top-box >ul >li{
+    float: left;
+}
+#contents2 #main .top-box >ul >li::after{
+    content: '>';
+}
+#contents2 #main .top-box >ul >li:last-child:after{
+    content: '';
+}
+
+/* 오른쪽메뉴 - mid */
+#contents2 #main .mid-box{
+    padding-top: 5px ;
+}
+#contents2 #main .mid-box .search{
+    float: right;
+}
+#contents2 #main .mid-box .search input{
+    height: 21px;
+    width: 120px;
+}
+#contents2 #main .mid-box .search button{
+    padding: 2px;
+}
+
+/* 오른쪽메뉴 - table */
+#contents2 #main table{
+    border-collapse: collapse;
+    border: 1px solid #000;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+}
+#contents2 #main table thead{
+    border-bottom: 1px solid #000;
+    background-color: #ccc;
+}
+#contents2 #main table thead tr{}
+#contents2 #main table thead tr th{
+    padding: 8px 0;
+}
+#contents2 #main table tbody{
+   
+}
+#contents2 #main table tbody tr{
+    border-bottom: 1px solid #000;
+}
+#contents2 #main table tbody tr td{
+    padding: 8px 0;
+}
+
+/* 오른쪽메뉴 - bottom */
+#contents2 #main .botm-box{
+}
+#contents2 #main .botm-box >ul{
+    width: 26%;
+    /* background-color: pink; */
+    margin: 0 auto;
+}
+#contents2 #main .botm-box >ul >li{
+    float: left;
+    /* background-color: skyblue; */
+    margin: 0 5px;
+}
+#contents2 #main .botm-box >ul >li:first-child{
+    margin-left: 0;
+}
+#contents2 #main .botm-box >ul >li:last-child{
+    margin-right: 0;
+}
+#contents2 #main .botm-box button{
+    float: right;
+    padding: 2px;
+}

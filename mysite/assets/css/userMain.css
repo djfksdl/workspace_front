@@ -1,0 +1,38 @@
+/* contents3 */
+.contents3{
+    /* background-color: pink; */
+    padding-top: 14px;
+}
+/* 회원가입 폼 */
+.sign-in-form{
+    border: 1px solid #B0B0B0;
+    width: 295px;
+    padding: 30px 125px;
+    margin: 0 auto;
+}
+.sign-in-form .form-wrap{
+    margin-bottom: 20px;
+}
+.sign-in-form .form-wrap span{
+    font-size: 14px;
+    width: 60px;
+    /* background-color: darkorange; */
+    display: inline-block;
+    text-align: right;
+    margin-right: 20px;
+}
+.sign-in-form .form-wrap input[type="text"] ,.sign-in-form .form-wrap input[type="password"]{
+    width: 142px;
+    height: 27px;
+}
+.sign-in-form .form-wrap button{
+    width: 60px;
+    height: 25px;
+}
+/* 버튼 */
+.sign-in-form .form-button button{
+    display: block;
+    margin: 0 auto;
+    width: 98px;
+    height: 30px;
+}
