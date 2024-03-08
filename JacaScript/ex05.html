@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>자바스크립트</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>자바스크립트</h1>
+        <h2>소제목</h2>
+    </body>
+    <script>
+        window.console.log("========================");
+
+        let code1 = window.prompt("과목코드를 입력하세요");
+        console.log(typeof code1); //문자열로 받음
+        console.log(code1);
+        
+        switch(code1){
+            case "1": //만약 "1"이 아닌 1로 써주게 되면 인식안함. 숫자로 다 받을꺼면 위에서 code를 int형으로 바꿔야함.
+                console.log("R101호");
+                break;
+            case "2":
+                console.log("R202호");
+                break;
+            case "3":
+                console.log("R303호");
+                break;
+            case "4":
+                console.log("R404호");
+                break;
+            default:
+                console.log("상담원");
+                break;
+        }
+
+        let code2 = window.prompt("과목코드를 입력하세요");
+        console.log(typeof code2); //문자열로 받음
+        console.log(code2);
+        let no = Number.parseInt(code2); // Integer.parsInt처럼 숫자로 바꿀 수 있음 
+        
+        switch(code){
+            case 1 : //숫자로 받을 수 있게 바꿔줘야함.
+                console.log("R101호");
+                break;
+            case 2 :
+                console.log("R202호");
+                break;
+            case 3 :
+                console.log("R303호");
+                break;
+            case 4 :
+                console.log("R404호");
+                break;
+            default:
+                console.log("상담원");
+                break;
+        }
+
+    </script>
+</html>

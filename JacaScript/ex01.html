@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>자바스크립트</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>자바스크립트</h1>
+        <h2>기본데이터타입</h2>
+    </body>
+    <script>
+        window.console.log("aaa"); //window 생략 가능
+        console.log("=======================");
+        console.log("#데이터타입 확인");
+        //자바스크립트 기본 자료형은 number, string, boolean
+        console.log(typeof 1);
+        console.log(typeof 1.5);//정수,실수 상관없이 number로 인식함.
+        console.log(typeof "한");
+        console.log(typeof "안녕하세요");
+        console.log(typeof '한'); // ''로 써도 자바는 char로 인식하는데 여기는 string밖에 없다. 
+        console.log(typeof (5>3)); 
+        console.log(typeof (5<3)); 
+
+        console.log("=======================");
+        console.log("#number형");
+        console.log(13+5);
+        console.log(13-5);
+        console.log(13*5);
+        console.log(13/5);
+        console.log(13%5);
+        
+        console.log(13+5.2);
+        console.log(5+3*2);//5+6
+        console.log((5+3)*2);//8*2
+
+        console.log("=======================");
+        console.log("#string형");
+        console.log("동해물과 백두산이");
+        console.log('동해물과 백두산이');
+        
+        console.log("동해물과 \"백두산\"이");//자바처럼 \로 써주면 ""를 문자로 인식함
+        console.log('동해물과 "백두산"이');//하나짜리로 시작하고 중간에 두개짜리 넣어주면 인식 잘함. 이걸 더 많이 씀.
+        
+        console.log('동해물과 백두산이');
+        console.log('동해물과 \'백두산\'이');//동해물과 '백두산'이
+
+        console.log("동해물과 \n백두산이");
+        console.log("동해물과 \t백두산이");
+        console.log("동해물과 \\백두산이");// 슬래시 넣은때. 근데 \만넣으면 애가 인식을 잘 못함.
+        
+        console.log("=======================");
+        console.log("#boolean형");
+        console.log(52>273);//false
+        console.log(52<273);//true
+
+        console.log("=======================");
+        console.log("#  && || 연산자");
+        console.log((5>3) && (5<3));//T && f =>F
+        console.log((5>3) || (5<3));//T || f =>t
+        console.log(!((5>3) && (5<3)));// !(T || f) 
+
+    </script>
+
+</html>

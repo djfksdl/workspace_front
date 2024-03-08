@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>자바스크립트</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>자바스크립트</h1>
+        <h2>소제목</h2>
+    </body>
+<script>
+    let arr01 = new Array(); //배열인데 리스트처럼 작동한다. 배열이면 처음에 자릿수 정해줘야함. 근데 이건 안해도됨. 리스트가 그러함.
+    arr01[0] = 1;
+    arr01[1] = 100; // [1,100]
+    console.log(arr01[0]);
+    console.log(arr01[1]);
+    /////////////////////////////////
+
+    let arr02 = []; //이걸 더 많이 씀.
+    arr02[0]=3;
+    arr02[1]=5; // <-- 출력
+    arr02[2]=7;
+    console.log(arr02[1]);
+
+    /////////////////////////////////
+    let arr03 = [10,20,30,40];//값이 만들때부터 정해져있으면 이렇게 쓴다.아니라면 위에 처럼 각자 넣어줌.
+    arr03[4] = 50;
+    console.log(arr03[2]);
+
+    for(let i=0; i<arr03.length; i++){
+        console.log(arr03[i]);
+    }
+    /////////////////////////////////
+    console.log("==============================================");
+    let arr04 = [];//여긴 넘버만 넣는다는 조건이 따로 없음. 
+    arr04[0] = 1;
+    arr04[1] = 2.5;
+    arr04[2] = "안녕";
+    arr04[3] = "hello";
+    arr04[4] = 5>3 ;//boolean형도 잘 들어감.
+    arr04[5] = function(){console.log("나는 익명함수")} ;//함수도 들어감
+
+    for(let i=0; i<arr04.length; i++){
+        console.log(arr04[i]);
+    }
+    arr04[5](); //함수 실행하려고하면 ()를 해줘야 실행이 된다.이름만쓰면 그냥 부른거다. for문 돌릴때 실행하고싶어서 ()를 하면 그냥 값인 애들은 실행이 안되니까 안됨.
+
+    /////////////////////////////////
+    console.log("==============================================");
+    let arr05= [1 ,2.5,"안녕",["정우성","박명수"," 유재석"], 5>3];
+
+    console.log(arr05[1]);
+    console.log(arr05[2]);
+    console.log(arr05[3]);
+    console.log(arr05[3][0]);//이차원 배열이라고 됨
+
+
+    console.log("==============================================");
+    let nameArr=[];
+    nameArr.push("정우성");
+    nameArr.push("박명수");
+    nameArr.push("유재석");
+
+    // for(let i = 0; i<nameArr.length; i++){
+    //     console.log(nameArr[i]);
+
+    // };
+
+    nameArr.pop();
+    console.log(nameArr);
+    
+</script>
+</html>
