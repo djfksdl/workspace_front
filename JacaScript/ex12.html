@@ -14,26 +14,28 @@
 
     // //정의-다조사
     // function ckeckScope(){
-    //     let str = "local";
+    //     let str = "local";  //지역변수를 선언. 함수안에서만 존재
     //     console.log(str);
     // }
 
-    // //실행
-    // checkScope(); //checkScop부르고 ()실행
-    //               // local
-    // console.log(str);//global
+    //리허설때 조사해서 변수만 올라가고, 함수가 올라가있다. 
 
-    ////////////////////////
+    // //실행
+    // checkScope(); //checkScop부르고, ()실행 -> local을 출력하게 된다. 
+    // console.log(str);//global - 전역변수인 str이라 그대로 global 유지됨.
+
+    ////////////////////////////////////////////////////////////////////////////
     let str = "global";
+    //let str2  로 선언이 되어진다.
 
     function checkScope(){
-        str = "local"; //global ->local
+        str = "local"; //global ->local : 이미 있는 전역변수에 값을 대입하는것임! let을 하지 않았으니 지역변수로 새로 생성되는게 아니다!
         console.log(str); //local
 
-        str2 = "로컬";
+        str2 = "로컬";// 정의해준 변수가 없어서 오류가 나야하는데 안남 -> 이렇게 정의하면 위에 전역변수로 정의가 된다.
     }
-    checkScope();
+    checkScope();// str=local , str2=로컬
     console.log(str); //local
-    console.log(str2); //local
+    console.log(str2); //로컬
 </script>
 </html>
