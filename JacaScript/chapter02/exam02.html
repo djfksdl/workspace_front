@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="" rel="stylesheet">
+
+</head>
+
+<body>
+	<!--태그-->
+    <h1>JavaScript</h1>
+	<ul>
+		<li> 순서1 순서1 순서1 순서1 순서1 </li>
+		<li> 순서2 순서2 순서2 순서2 순서2 </li>
+		<li> 순서3 순서3 순서3 순서3 순서3 </li>
+		<li> 순서4 순서4 순서4 순서4 순서4 </li>
+	</ul>
+	
+	<p> 텍스트1 텍스트1 텍스트1 텍스트1 텍스트1 </p>
+	<p> 텍스트2 텍스트2 텍스트2 텍스트2 텍스트2 </p>
+	<p> 텍스트3 텍스트3 텍스트3 텍스트3 텍스트3 </p>
+	<p> 텍스트4 텍스트4 텍스트4 텍스트4 텍스트4 </p>
+
+</body>
+
+<script>
+//DOM tree가 완성되었을때
+document.addEventListener("DOMContentLoaded", function(){
+
+    //첫번째 li를 빨간색으로 변경
+    let liTags = document.getElementsByTagName("li"); //태그네임은 여러개니까 앞에 엘리멘츠s가 된다.
+    console.log(liTags);
+    liTags[0].style.color="orange";
+
+    //모든 p태그를 파란색으로 변경
+    let pTags = document.getElementsByTagName("p");
+    console.log(pTags);
+    for(let i=0; i<pTags.length; i++){
+        pTags[i].style.color="blue";
+    }
+
+    //h1 초록색으로 변경
+    let h1Tag = document.getElementsByTagName("h1");
+    console.log(h1Tag);
+    h1Tag[0].style.color = "#ff0000";//한칸짜리 배열도 배열이기때문에 []안에 써줘야 알 수 있다. 
+});
+
+</script>
+
+</html>

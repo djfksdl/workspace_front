@@ -39,7 +39,51 @@
 </body>
 
 <script>
+//DOM tree가 생성되었을때
+document.addEventListener("DOMContentLoaded", function(){
 
+	/************************************
+		document.querySelector()- 1개
+	*************************************/
+
+	//1개 가져오기.
+	let h1Tag = document.querySelector("h1");
+	console.log(h1Tag);
+	h1Tag.style.color = "#ff0000";
+
+	//실험
+	let liTag = document.querySelector("li"); //li가 여러개여도 맨 위 한개만 가져온다. 왜? 하나만 가져오는 querySelector를 썼으니까
+	console.log(liTag);
+
+	/****************************************
+		document.querySelectorAll()- 여러개
+	*****************************************/
+	let liTags = document.querySelectorAll("li");
+	console.log(liTags);
+	for(let i=0; i<liTags.length; i++){
+		liTags[i].style.color = "#0000ff";
+	}
+
+	//클래스명이 active인 요소 빨간색으로
+	let activeTag = document.querySelector("#nav>ul>li.active");
+	console.log(activeTag);
+	activeTag.style.color="#00ff00";
+
+	//li요소와 label빨간색으로 
+	let tepTags= document.querySelectorAll("#nav>ul>li, form>label");
+	console.log(tepTags);
+
+	for(let i =0; i<tepTags.length; i++){
+		tepTags[i].style.color = "red";
+	}
+
+	let txtNameTag = document.querySelector('[name="userId"]');//""와 ''를 구분해서 써주기
+	txtNameTag.style.color = "#ff0000";
+
+	let lastLiTag= document.querySelector("#nav ul >li:last-child");
+	console.log(lastLiTag);
+	lastLiTag.style.color="green";
+});
 
 </script>
 

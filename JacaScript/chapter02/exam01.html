@@ -22,7 +22,35 @@
 </body>
 
 <script>
+    //시점1일때 2일때 순서가 뒤바뀌어도 dom이 먼저 실행되기때문에 찍히는 순서는 dom이 시행되었을때 부터 찍힌다.
+    //돔트리 생성이 완료되었을때
+    document.addEventListener("DOMContentLoaded",function(){ //이때만 쓸꺼라 익명함수로 씀.
+        console.log("DOM tree 완료");
+        
+        //id=second
+        let seTag = document.getElementById("second"); //id로 요소를 찾을 것이다.-> 그래서 ()안에는 아이디를 적어줘야함.  
+        console.log(seTag);
+        seTag.style.color="#ff0000";
 
+        //id=third
+        let thTag= document.getElementById("third");
+        thTag.style.color="#FF6F91";
+
+        //id=fourth
+        let foTag= document.getElementById("fourth");
+        foTag.style.color="#57641D";
+
+        //id=first(주의!)
+        let fiTag = document.getElementById("first");
+        console.log(fiTag);
+        fiTag.style.color="skyblue";
+        //id가 페이지당 하나만 있어야하는데 중복될 경우 위에 있는 1개만 가져옴. 
+    }); 
+
+    window.addEventListener("load",function(){
+        console.log("페인팅까지 완료");
+
+    });
 </script>
 
 </html>

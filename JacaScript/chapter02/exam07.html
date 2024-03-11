@@ -53,6 +53,45 @@
 </body>
 
 <script>
+	//DOM tree생성되었을때
+	document.addEventListener("DOMContentLoarded", function(){
+		let tag01 = document.querySelector("h1");
+		console.log(tag01);
+		console.log(tag01.parentElement);
+
+		console.log("======================================");
+
+		let tag02 = document.querySelector(".red");
+		console.log(tag02);
+		console.log(tag02.parentElement);
+
+		console.log("======================================");
+
+		let tag03 = document.querySelector(".red");
+		console.log(tag03);
+		console.log(tag03.parentElement);
+
+		console.log("======================================");
+
+		//이효리
+		//#h-2 위치일때 본인의 tr의 id값 출력
+		let tag04 = document.querySelector("#h-2");
+		console.log(tag04);
+		console.log(tag04.parentElement.id);
+		
+		//#h-2 위치일때 이효리 이름값 출력
+		console.log(tag04.previousElementSibling.textContent);
+		
+		//#h-2 위치일때 이효리 회사번호 출력
+		console.log(tag04.previousElementSibling.textContent);
+		//#h-2 위치일때  정우성 회사번호
+		console.log(tag04.parentElement.previousElementSiblinge.textContent);
+		//#h-2 위치일때 박명수 회사번호 출력
+
+		
+
+
+	});
 </script>
 
 </html>
