@@ -26,7 +26,31 @@
     console.log(guestBookVo.comtent);
 
     guestBookVo.showInfo();
-    guestBookVo.name();
+    //guestBookVo.name();//${guestBookVo.name}이랑 헷갈리는데 js에서는 이렇게 쓰면 오류남!
+
+    //객체정의
+    //이름, 패스워드,내용
+    let guestBookVo2={//초기화+값 넣어주기
+        //필드
+        //private String name
+                name: "정우성",
+                pw:"1234",
+                content:"방문합니다."
+        //얘네는 일단 없다고 생각하기
+        // 생성자
+        // 메소드gs
+        // 메소드일반
+    };
+
+    console.log(guestBookVo2.name);
+    console.log(guestBookVo2.pw);
+    console.log(guestBookVo2.content);
+
+    console.log(guestBookVo2);//toString처럼 전체를 빨리 보고싶을때 사용
+
+    //정우성을 박명수로 바꾸려면
+    guestBookVo2.name= "박명수";
+    console.log(guestBookVo2);
 
 </script>
 </html>
