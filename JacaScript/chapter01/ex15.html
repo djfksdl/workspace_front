@@ -28,14 +28,17 @@
     guestBookVo.showInfo();
     //guestBookVo.name();//${guestBookVo.name}이랑 헷갈리는데 js에서는 이렇게 쓰면 오류남!
 
-    //객체정의
+    //객체정의 - 생성과 함께 초기화(값이 확정되었을 경우)
     //이름, 패스워드,내용
     let guestBookVo2={//초기화+값 넣어주기
         //필드
         //private String name
                 name: "정우성",
                 pw:"1234",
-                content:"방문합니다."
+                content:"방문합니다.",
+                showInfo: function(){
+            console.log(this.name + "," + this.password + "," +this.content);
+        }
         //얘네는 일단 없다고 생각하기
         // 생성자
         // 메소드gs
@@ -51,6 +54,31 @@
     //정우성을 박명수로 바꾸려면
     guestBookVo2.name= "박명수";
     console.log(guestBookVo2);
+
+    //이렇게도 사용가능
+    console.log(guestBookVo2["name"]);
+    console.log(guestBookVo2["pw"]);
+    console.log(guestBookVo2["content"]);
+    guestBookVo2["showInfo"]();
+
+    ///////////////////////////////////////////////////////////
+    //객체정의 - 생성이후에 초기화(값을 나중에 넣어야할 떄 할때)
+
+    // private String name;
+    // private String pw;
+    // private String company;
+    //보통 필드는 정해져있음.
+
+    let geustVo = {};
+    geustVo.name = "이효리";
+    geustVo.pw="1234";
+    geustVo.content="이효리방문";
+    geustVo.showInfo= function(){
+        console.log("#"+ this.name + "," + this.password + "," +this.content);
+    };
+    geustVo.age= 12;
+    console.log(geustVo);
+    geustVo.showInfo();
 
 </script>
 </html>

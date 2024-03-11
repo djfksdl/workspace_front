@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>자바스크립트</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>자바스크립트</h1>
+        <h2>객체</h2>
+    </body>
+<script>
+    //코어객체
+    let date = new Date();
+    console.log(date);
+
+    let year = date.getFullYear();
+    let month = date.getMonth()+1;
+    let day = date.getDay();
+    let hour = date.getHours();
+    let minute = date.getMinutes();
+    let second = date.getSeconds();
+
+    console.log(year);
+    console.log(month);
+    console.log(day);
+    console.log(hour);
+    console.log(minute);
+    console.log(second);
+
+    let date2 = new Date(0);
+    console.log(date2);
+    //Thu Jan 01 1970 09:00:00 GMT+0900 (한국 표준시)
+    //한국기준이라 +9000해준거임
+    //1970-01-01 00:00:00 -> 0으로 불러옴.
+    //1970-01-01 00:00:05 -> 5로 불러옴.
+
+    let date3 = new Date(5);
+    console.log(date3);
+    console.log("===============================================");
+
+    //문자열
+    let str = "Hello";
+    console.log(str.length);
+    console.log("Hello".length);
+    console.log("990101-1234567".charAt(7));
+
+    console.log("===============================================");
+    //숫자
+
+    //숫자1(문자열 -> 숫자)
+    let num01 = "100";
+    //let no = Number(num01); //문자열 -> 숫자
+    let no = parseInt(num01); //문자열 ->정수
+
+    //숫자2
+    let num02  = 5;
+
+    let sum = no + num02;
+    console.log(sum);
+
+    console.log("===============================================");
+    //수학
+    let pi = Math.PI;
+    console.log(pi);
+
+    console.log(Math.abs(-123));//절대값
+    console.log(Math.ceil(-123.456));//올림
+    console.log(Math.floor(-123.456));//내림
+    console.log(Math.round(-123.456));//반올림
+
+    console.log(Math.random);//반올림 0<=숫자 <1
+    //요거 해오기 랜덤그거랑 똑같음
+
+</script>
+</html>
