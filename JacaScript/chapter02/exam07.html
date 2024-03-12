@@ -54,22 +54,22 @@
 
 <script>
 	//DOM tree생성되었을때
-	document.addEventListener("DOMContentLoarded", function(){
+	document.addEventListener("DOMContentLoaded", function(){
 		let tag01 = document.querySelector("h1");
 		console.log(tag01);
-		console.log(tag01.parentElement);
+		console.log(tag01.parentElement);// <body>/ 부모에 있는거 다 가져온거임. 이경운html다 가져온거임. 이름만 알려면 .tagName붙여서 알수 있음
 
 		console.log("======================================");
 
-		let tag02 = document.querySelector(".red");
+		let tag02 = document.querySelector(".red");//클래스 가져온거니까 앞에 . 찍어주기
 		console.log(tag02);
-		console.log(tag02.parentElement);
+		console.log(tag02.parentElement);//<.content>
 
 		console.log("======================================");
 
-		let tag03 = document.querySelector(".red");
+		let tag03 = document.querySelector("#n-3");
 		console.log(tag03);
-		console.log(tag03.parentElement);
+		console.log(tag03.parentElement);//<tbody>
 
 		console.log("======================================");
 
@@ -77,17 +77,20 @@
 		//#h-2 위치일때 본인의 tr의 id값 출력
 		let tag04 = document.querySelector("#h-2");
 		console.log(tag04);
-		console.log(tag04.parentElement.id);
+		console.log(tag04.parentElement.id);//#n-2
 		
 		//#h-2 위치일때 이효리 이름값 출력
-		console.log(tag04.previousElementSibling.textContent);
+		console.log(tag04.previousElementSibling.textContent);//현재기준 이전 형제태그
 		
 		//#h-2 위치일때 이효리 회사번호 출력
-		console.log(tag04.previousElementSibling.textContent);
-		//#h-2 위치일때  정우성 회사번호
-		console.log(tag04.parentElement.previousElementSiblinge.textContent);
-		//#h-2 위치일때 박명수 회사번호 출력
+		console.log(tag04.nextElementSibling.textContent);//현재기준 다음 형제태그
 
+		//#h-2 위치일때  정우성
+		//부모 >앞 형제 >첫번째 자식> 이름
+		console.log(tag04.parentElement.previousElementSibling.firstElementChild.textContent);
+
+		//#h-2 위치일때 박명수 회사번호 출력
+		console.log(tag04.parentElement.nextElementSibling.lastElementChild.textContent);
 		
 
 

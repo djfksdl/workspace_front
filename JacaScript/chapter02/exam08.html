@@ -54,9 +54,15 @@
 
 <script>
 	//DOM tree생성되었을떄 
-	document.addEventListener("DOMContentLoaded",function(){
+	document.addEventListener("DOMContentLoaded ",function(){
 		let trs = document.querySelectorAll("tbody>tr");
 		console.log(trs);
+
+		console.log(trs[0]);
+		console.log(trs[0].children);//td
+		// console.log(trs[0].children[0].textContent);
+		// console.log(trs[0].children[1].textContent);
+		// console.log(trs[0].children[2].textContent);
 		
 		let personList = [];
 
@@ -64,8 +70,17 @@
 			let name = trs[i].children[0].textContent
 			let hp = trs[i].children[1].textContent
 			let company = trs[i].children[2].textContent
+
+			let personVo = {
+				name: name, // 필드이름:값
+				hp: hp, // 필드이름:값
+				company: company // 필드이름:값
+			};
+
+			personList.push(personVo);
 		}
-		// 10:6전까지 듣기
+		console.log(personList);
+		
 
 	});
 </script>
