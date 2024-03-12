@@ -38,19 +38,20 @@ document.addEventListener("DOMContentLoaded",function(){
     //console.log(liTags[0]);
 
     for(let i=0; i<liTags.length; i++){
-        liTags[i].addEventListener("click",function(event){ //event는 더 많은 정보를 가지고 있음. 파라미터 자리에 이름 써주면 여기에 담아줌 3:48
+        liTags[i].addEventListener("click",function(event){ //그동안은 필요없어서 안썼는데 첫번쨰 파라미터를 쓰면 얘네가 자동으로 담아줌. 지금 클릭한 애. 보통 e(event)라고줌
             console.log((i+1)+"번째 아이템 클릭");
-            //console.log(this.textContent); //this->이벤트 리스너가 붙어 있는 그 요소
+            console.log(this.textContent); //this->이벤트 리스너가 붙어 있는 그 요소!
             //event.target=> 사용자가 실제로 클릭한 그 요소
 
             //this예제
             //this.remove(); //삭제
             //this.textContent=""; //자리는 유지하고 내용만 비움
 
-            //console.log(event);//event 타겟이 누구인지 알려줌
+            //console.log(event);//event 타겟이 누구인지 알려줌(어떤애가 클릭당했는지 알고싶다.)
+            //event는 this보다 더 많은 정보를 싸고있음. -> 콘솔에서 펼쳐보면 많은 정보들이 있다. 
 
-            //event.target
-            //event.target.remove();
+            //event.target //<li>
+            event.target.remove();
             //event.target.textContent="";
 
         });

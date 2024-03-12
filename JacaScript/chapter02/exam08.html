@@ -54,19 +54,19 @@
 
 <script>
 	//DOM tree생성되었을떄 
-	document.addEventListener("DOMContentLoaded ",function(){
+	document.addEventListener("DOMContentLoaded", function(){
 		let trs = document.querySelectorAll("tbody>tr");
 		console.log(trs);
 
-		console.log(trs[0]);
-		console.log(trs[0].children);//td
+		//console.log(trs[0]);
+		//console.log(trs[0].children);//td
 		// console.log(trs[0].children[0].textContent);
 		// console.log(trs[0].children[1].textContent);
 		// console.log(trs[0].children[2].textContent);
 		
 		let personList = [];
 
-		for (let i =0; i<personList.length; i++){
+		for(let i=0; i<trs.length; i++){
 			let name = trs[i].children[0].textContent
 			let hp = trs[i].children[1].textContent
 			let company = trs[i].children[2].textContent
@@ -80,6 +80,7 @@
 			personList.push(personVo);
 		}
 		console.log(personList);
+		console.log(personList[1].hp); //이효리 전화번호
 		
 
 	});
