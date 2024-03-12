@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="" rel="stylesheet">
+    <style>
+
+    </style>
+
+
+</head>
+
+<body>
+    <ul>
+
+        <li>첫번째 아이템 입니다.</li>
+        <li>두번째 아이템 입니다.</li>
+        <li>세번째 아이템 입니다.</li>
+        <li>네번째 아이템 입니다.</li>
+        <li>다섯번째 아이템 입니다.</li>
+        <li>여섯번째 아이템 입니다.</li>
+        <li>일곱번째 아이템 입니다.</li>
+        <li>여덟번째 아이템 입니다.</li>
+        <li>아홉번째 아이템 입니다.</li>
+        <li>열번째 아이템 입니다.</li>
+    </ul>
+    
+</body>
+
+<script>
+//DOM tree 생성되었을때 
+document.addEventListener("DOMContentLoaded",function(){
+    //li를 클릭할때
+    let liTags = document.querySelectorAll("li");
+    console.log(liTags);
+
+    //console.log(liTags[0]);
+
+    for(let i=0; i<liTags.length; i++){
+        liTags[i].addEventListener("click",function(event){ //event는 더 많은 정보를 가지고 있음. 파라미터 자리에 이름 써주면 여기에 담아줌 3:48
+            console.log((i+1)+"번째 아이템 클릭");
+            //console.log(this.textContent); //this->이벤트 리스너가 붙어 있는 그 요소
+            //event.target=> 사용자가 실제로 클릭한 그 요소
+
+            //this예제
+            //this.remove(); //삭제
+            //this.textContent=""; //자리는 유지하고 내용만 비움
+
+            //console.log(event);//event 타겟이 누구인지 알려줌
+
+            //event.target
+            //event.target.remove();
+            //event.target.textContent="";
+
+        });
+    }
+
+
+}); 
+</script>
+
+</html>

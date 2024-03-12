@@ -46,7 +46,75 @@
 
 
 </body>
+<script>
+	//DOM tree 실행될때
+	document.addEventListener("DOMContentLoaded",function(){
+		let btn = document.querySelectorAll("[type=button]");
+		let display = document.querySelector("#display");
+		
+		//console.log(btn);
+		
+		//버튼 누를때
+		for(let i= 0; i<btn.length; i++){
+			btn[i].addEventListener("click",function(){
+				let btnI = btn[i].textContent;
+				//console.log(btn[i].textContent);
+				
+				if(btnI == "="){
+						if(display.value.includes("+")){
+							console.log("더하기");
+							//+를 기준으로 왼쪽 오른쪽 잘라낸다. split인가 뭔가 비슷한 기능 
+							let splitPlus = display.value.split("+");
+							//console.log(splitPlus);
+							let lNum = Number(splitPlus[0]);
+							let rNum = Number(splitPlus[1]);
+							//console.log(lNum);
+							//console.log(rNum);
+							let sum = lNum + rNum;
+							display.value = sum;
 
+						}else if(display.value.includes("-")){
+							console.log("빼기");
+							let splitMinus = display.value.split("-");
+							let lNum = Number(splitMinus[0]);
+							let rNum = Number(splitMinus[1]);
+
+							let munus = lNum - rNum;
+							display.value = munus;
+
+						}else if(display.value.includes("*")){
+							console.log("곱하기");
+							let splitMulti = display.value.split("*");
+
+							let lNum = Number(splitMulti[0]);
+							let rNum = Number(splitMulti[1]);
+
+							let multi = lNum * rNum;
+							display.value = multi;
+
+
+						}else if(display.value.includes("/")){
+							console.log("나누기");
+							let splitDiv = display.value.split("/");
+
+							let lNum = Number(splitDiv[0]);
+							let rNum = Number(splitDiv[1]);
+
+							let div = lNum / rNum;
+							display.value = div;
+						}
+						//console.log("계산할때");
+					}else if(btnI == "C"){
+						//console.log("초기화 ");
+						display.value="";
+					}else{//=은 추가 되지 않기 위해 이쪽에 씀
+						display.value +=btnI;
+					}
+			});
+		};
+
+	});
+</script>
 
 
 
