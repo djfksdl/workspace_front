@@ -23,7 +23,46 @@
 </body>
 
 <script>
+//DOM tree 생성시
+document.addEventListener("DOMContentLoaded",function(){
 
+    let btn = document.querySelector("#btnPlus");
+    console.log(btn);
+    
+    //더하기버튼 눌렀을때
+    btn.addEventListener("click",function(){
+        console.log("버튼 눌렀을때");
+
+        //값 가져오기- 모아둔다.그래야 나중에 똑같은거 다시 만드는 실수를 하지 않음.
+        let lt= document.querySelector("#left");
+        let rt= document.querySelector("#right");
+        
+        let display = document.querySelector("#display");
+        
+        //확인용
+        console.log(lt.value); //속성값은 그대로 찍어주면 됨
+        console.log(rt.value);
+        
+        //type of로 무슨 자료형인지 확인하기 
+        console.log(typeof lt.value);
+        console.log(typeof rt.value);
+        
+        //더하기
+        let sum = Number(lt.value)+Number(rt.value);//Number말고 parseInt로 바꿔도됨- 근데 그건 정수형으로 바꾸는거임
+        console.log(sum);
+
+        //출력
+        display.textContent = sum;
+
+        //비우기
+        lt.value="";
+        rt.value="";
+
+    })
+
+
+    
+});
 </script>
 
 </html>

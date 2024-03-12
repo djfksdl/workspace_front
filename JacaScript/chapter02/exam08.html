@@ -53,6 +53,21 @@
 </body>
 
 <script>
+	//DOM tree생성되었을떄 
+	document.addEventListener("DOMContentLoaded",function(){
+		let trs = document.querySelectorAll("tbody>tr");
+		console.log(trs);
+		
+		let personList = [];
+
+		for (let i =0; i<personList.length; i++){
+			let name = trs[i].children[0].textContent
+			let hp = trs[i].children[1].textContent
+			let company = trs[i].children[2].textContent
+		}
+		// 10:6전까지 듣기
+
+	});
 </script>
 
 </html>

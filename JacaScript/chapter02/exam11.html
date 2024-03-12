@@ -70,6 +70,28 @@
 </body>
 
 <script>
+//DOM tree 생성되었을때
+document.addEventListener("DOMContentLoaded",function(){
+	
+	//#p11태그의 컨텐츠를 가져오세요	
+	let p11Tag= document.querySelector("#p11");
+	console.log(p11Tag);
+
+	// #p13태그에 텍스트를 "<strong>가나다라마바사</strong>" 
+	let p13Tag= document.querySelector("#p13");
+	console.log(p13Tag);
+	p13Tag.textContent="<strong>가나다라마바사</strong>";
+
+	//#p14태그에 텍스트를 <strong>가나다라마바사</strong>
+	let p14Tag = document.querySelector("#p14");
+	console.log(p14Tag);
+	p14Tag.innerHTML= "<strong>가나다라마바사</strong>";
+
+	//#p3태그의 텍스트를 비워야된다. - 자리는 유지됨
+	let p3Tag = document.querySelector("#p3");
+	console.log(p3Tag);
+	p3Tag.textContent="";
+});
 </script>
 
 </html>

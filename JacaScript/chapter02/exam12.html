@@ -23,7 +23,23 @@
 </body>
 
 <script>
+//DOM tree 생성되었을때
+document.addEventListener("DOMContentLoaded",function(){
+    console.log("DOM tree 생성");
 
+    //btn버튼을 클릭했을때
+    let btn = document.querySelector("#btn");
+    console.log(btn);
+
+    btn.addEventListener("click",function(){//여기서만 쓰이기때문에 익명함수 써줌
+        console.log("버튼 클릭");
+
+        let display = document.querySelector("#display");
+        console.log(display);
+        display.textContent="호맇";
+        display.style.color = "blue" ;
+    });
+});
 
 </script>
 
