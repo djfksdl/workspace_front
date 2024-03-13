@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="" rel="stylesheet">
+    <style>
+        ul{
+            width: 200px;
+            padding: 20px;
+            background-color: #00ffff;
+        }
+        li{
+            border: 1px solid #000;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <ul>
+
+        <li>첫번째 아이템 입니다.</li>
+        <li>두번째 아이템 입니다.</li>
+        <li>세번째 아이템 입니다.</li>
+        <li>네번째 아이템 입니다.</li>
+        <li>다섯번째 아이템 입니다.</li>
+    </ul>
+    <button id="btnAfter" type="button">뒤에 추가</button>
+    
+</body>
+
+<script>
+//DOM tree생성되었을때 
+document.addEventListener("DOMContentLoaded",function(){
+    //버튼 눌렀을때 
+    let btnAfter = document.querySelector("#btnAfter");
+    btnAfter.addEventListener("click",function(){
+        console.log("버튼 클릭");
+        
+        let ulTag = document.querySelector("ul");
+        let str = "<li>뒤에 추가된 아이템입니다.</li>";
+        ulTag.insertAdjacentHTML("beforeend", str);
+
+    });
+
+    //2. ul 요소를 클릭했을때의 기능을 li요소에 위임
+    let ulTag = document.querySelector("ul");
+    console.log(ulTag);
+    ulTag.addEventListener("click",function(event){
+        //console.log("클릭");
+        console.log(this); //10:44 누가 클릭됐는지: ul
+        console.log(event.target);//적용되는곳: li
+        console.log(event.target.tagName); //태그네임은 대문자로 옴: LI
+
+        if(event.target.tagName == "LI"){
+            // event.target.textContent=""; : 내용만 지우기
+            event.target.remove(); //아예 삭제하기
+        }
+        //ul이 잡히는거지만 이벤트가 다 먹기때문에 각자 li를 클릭해도 작동됨. 추가한것도 작동됨
+
+    });
+
+
+    // //1. li클릭했을때 콘솔에 찍히게 하기 ->  새로 추가된 li요소에선 적용되지 않는다. 
+    // let liTags = document.querySelectorAll("li");
+    // console.log(liTags);
+
+    // for(let i=0; i<liTags.length;i++){
+    //     liTags[i].addEventListener("click",function(){
+    //         console.log((i+1)+"번째li");
+    //     });
+
+    // }
+
+    //근데 여기까지만 하면 뒤에 추가된 아이템입니다를 눌렀을때 이벤트가 잡히지않는다. 그냥 끼워서 그린거임.
+    //언제 시행됐는지? 그부분 10:17
+    //처음에 코드 짤때 ul만 남기고 나머지는 다 지워줌. 그래서 ul에 이벤트 짜서 다 적용될 수 있게 10:35
+
+
+});
+</script>
+
+</html>

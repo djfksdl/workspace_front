@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style>
+
+</style>
+
+
+</head>
+
+<body>
+    <div>
+		<form id="guestForm" action="http://localhost:8888/mysite6/guestbook/add" method="get">
+			<table border="1" width="540px">
+				<tr>
+					<td>이름</td>
+					<td><input type="text" name="name"></td>
+					<td>비밀번호</td>
+					<td><input type="password" name="pw"></td>
+				</tr>
+				<tr>
+					<td colspan="4">
+						<textarea cols="72" rows="5" name="content"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="4">
+						<button id="btnWrite" type="submit">등록</button>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	<br>
+
+</body>
+
+<script>
+//DOM tree가 생성되었을때
+document.addEventListener("DOMContentLoaded",function(){
+
+	//전송(form의 submit)버튼을 클릭할때
+	let guestForm = document.querySelector("#guestForm");
+	console.log(guestForm);
+	guestForm.addEventListener("submit",function(event){
+		console.log("전송버튼 클릭");
+		//event.preventDefault();
+
+		let nameTag = document.querySelector('[name="name"]');
+		//console.log(nameTag);
+		let name = nameTag.value.trim(); //공백 양쪽끝에 있는거 없앰.
+		//console.log(name);
+		//console.log(typeof name);//string , 안넣어도 string으로 나온다. 뭐가 들어왔단 이야기
+
+		let pwTag = document.querySelector('[name="pw"]');
+		console.log(pwTag);
+		let pw = pwTag.value;
+		console.log(pw);
+
+		if(name ==""){//이름이 없으면 폼 전송하지 말것
+			event.preventDefault();//폼기능 제한
+			// console.log("이름없음");
+			window.alert("이름을 입력해주세요");//경고장
+			//window는 생략가능. 브라우저에 있는 기능이다!
+			return false; //진행되는거 여기서 멈추고 끝내버린다. 이벤트 전파를 막음
+		}else if(pw ==""){//비밀번호가 없으면 폼 전송하지 말것
+			event.preventDefault();
+			window.alert("비밀번호를 입력해주세요");
+			return false;//elseif 말고 if로 썼을때 return false안쓰면 계속 물어봄.
+		}
+
+		//서버로 데이터 전송
+		// alert("전송완료");
+		// return true;//보통 쓰지않는다.
+	});
+});
+</script>
+
+</html>
