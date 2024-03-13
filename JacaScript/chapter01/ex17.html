@@ -17,24 +17,26 @@
     let triangle = {
         name: "삼각형",
         width: 5,
+        height: 10,
         area: function(){
-            console.log(this.name+ "의 넓이는 =" +(this.width*0.5));
+            console.log(this.name+ "의 넓이는 =" +(this.width*this.height*0.5));
         }
     };
     //Square만들기
     let square = {
         name: "사각형",
         width: 5,
+        height: 5,
         area: function(){
-            console.log(this.name+ "의 넓이는 =" +(this.width));
+            console.log(this.name+ "의 넓이는 =" +(this.width*this.height));
         }
     };
     //Circle만들기
     let circle = {
         name: "원",
-        width: 5,
+        radius: 5,
         area: function(){
-            console.log(this.name+ "의 넓이는 =" +(this.width*0.5));
+            console.log(this.name+ "의 넓이는 =" +(this.radius*this.radius*Math.PI));
         }
     };
 
