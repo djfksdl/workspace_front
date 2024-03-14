@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded",function(){
 	console.log(guestForm);
 	guestForm.addEventListener("submit",function(event){
 		console.log("전송버튼 클릭");
-		//event.preventDefault();
+		//event.preventDefault(); 여기서부터 막는게 아니라 if문안에서 막아야함. 나머지는 정상적으로 작동해야하니까
 
 		let nameTag = document.querySelector('[name="name"]');
 		//console.log(nameTag);

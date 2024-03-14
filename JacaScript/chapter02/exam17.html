@@ -45,13 +45,13 @@ document.addEventListener("DOMContentLoaded",function(){
 
     });
 
-    //2. ul 요소를 클릭했을때의 기능을 li요소에 위임
+    //2. ul 요소를 클릭했을때의 기능을 li요소에 '위임'
     let ulTag = document.querySelector("ul");
     console.log(ulTag);
     ulTag.addEventListener("click",function(event){
         //console.log("클릭");
-        console.log(this); //10:44 누가 클릭됐는지: ul
-        console.log(event.target);//적용되는곳: li
+        console.log(this); //누가 클릭됐는지: ul
+        console.log(event.target);//실제 적용되는곳: li
         console.log(event.target.tagName); //태그네임은 대문자로 옴: LI
 
         if(event.target.tagName == "LI"){
@@ -74,9 +74,10 @@ document.addEventListener("DOMContentLoaded",function(){
 
     // }
 
-    //근데 여기까지만 하면 뒤에 추가된 아이템입니다를 눌렀을때 이벤트가 잡히지않는다. 그냥 끼워서 그린거임.
-    //언제 시행됐는지? 그부분 10:17
-    //처음에 코드 짤때 ul만 남기고 나머지는 다 지워줌. 그래서 ul에 이벤트 짜서 다 적용될 수 있게 10:35
+    //근데 여기까지만 하면 뒤에 추가된 아이템입니다를 눌렀을때 이벤트가 잡히지않는다. 원래 있던게 아니라 추가된거라서!
+    //처음에 있는 애들이랑 js로 추가된 부분으로 나눠야함. 원래 있던 애들은 돔트리 만드는 과정 다 되어있음.(그냥 나열이 아닌 메소드같은것도 연결하는 과정도 포함). js로 추가된 애들은 그런 과정 안거치고 끼어든거임. 그려진거! 그래서 addEnetListener가 먹지 않음.그림으로 표현된거라 모름.
+    //처음에 코드 짤때 ul만 남기고 나머지는 다 지워줌. 그래서 ul에 이벤트 짜면 다 적용될 수 있게 위임해야함.
+    //원래부터 있는애,껍데기한테 (없으면 만들어주기) 권한을 주고 이벤트 걸어서 새로 생긴애한테 전달을 해달라고 해줌. 
 
 
 });
