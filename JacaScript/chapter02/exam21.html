@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+
+<body>
+    <p> js 추가문법</p>
+
+
+</body>
+
+<script>
+/* 
+//기명함수
+function plus(a,b){
+    sum = a+b;
+    return sum;
+}
+
+let result = plus(5,10);
+console.log(result);
+*/
+
+//익명함수
+/*
+let plus = function(a,b){
+    let sum = a+b;
+    return sum;
+}
+let result= plus(10,20);
+console.log(result);
+*/
+
+//익명함수 화살표함수
+let plus = (a,b)=>{
+    let sum = a+b;
+    return sum;
+};
+let result= plus(17,20);
+console.log(result);
+
+console.log("---------------------------------------");
+
+//원 넓이 구하기
+let circleArea = function(r){
+    let area = r*r*Math.PI;
+    return area;
+}
+// console.log(circleArea(2));
+let area = circleArea(5);
+console.log(area);
+
+
+//원 넓이 구하기 -> 화살표함수1
+let circleArea2 = (r)=>{
+    let area2 = r*r*Math.PI;
+    return area2;
+}
+let area2 = circleArea2(7);
+console.log(area2);
+
+//원 넓이 구하기 -> 화살표함수2
+//인자(파라미터)가 1개라면 괄호 생략가능, 2개이상은 안됨
+let circleArea3 = r=>{
+    let area3 = r*r*Math.PI;
+    return area3;
+}
+let area3 = circleArea3(9);
+console.log(area3);
+
+//원 넓이 구하기 -> 화살표함수3
+//함수몸체가 1줄이고, 결과를 반환하는 경우 중괄호와 return 생략가능
+let circleArea4 = r=>{return r*r*Math.PI};
+console.log(circleArea4(10));
+
+//원 넓이 구하기 -> 화살표함수3-1
+let circleArea5 = r=>r*r*Math.PI;
+console.log(circleArea5(12));
+
+
+let sayHello = function(){
+    console.log("안녕");
+}
+sayHello();
+
+let sayHello2 = ()=>console.log("안녕2");
+sayHello2();
+
+
+</script>
+
+</html>
